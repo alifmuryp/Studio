@@ -1,3 +1,91 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseurl = "https://muryp.my.id/"
+title = "MuryP Beta"
+theme = "studio"
+
+googleAnalytics = "G-4XH6NY1N24"
+disqusShortname = "studio"
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  ide = "ide"
+  tag = "tags"
+  catatan = "catatan"
+  author = "authors"
+
+[permalinks]
+  blog = "/:slug/"
+  laman = "/:slug/"
+  ideku = "/:slug/"
+  en = "/en/:slug/"
+
+languageCode = "id-id"
+DefaultContentLanguage = "id"
+paginate = 10
+
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+  github = "https://github.com/alifmuryp"
+  gitlab = "https://gitlab.com/muryp"
+  facebook = "https://facebook.com/alifmuryp"
+  og_image = "/images/noimg.png"
+  sitename = "MuryP Beta"
+  twitter = "@alifmuryp"
+    # Site Author
+    author = "MuryP"
+    # Description/subtitle for homepage
+    description = "MuryP, MuryP Beta, Internet, Technology, hardware, Operating Sistem, Software, Jaringan Komunikasi, JarKom, TIK, Ringkasan, Alief Prihantoro, Alif MuryP, Buku, Ebook,My Project Drawing/Desain,UI/UX,front end,Blogging, SEO,catatan"
+    # Template
+    color = "#1394e8b3"
+    lightcolor = "#1394e833"
+    darkcolor = "#1394e8"
+    background = "#1394e899"
+    darkbackground = "#1294e8"
+    # header = "link" (opsional)
+    
+    
+
+pygmentsUseClasses=true
+
+[frontmatter]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
+
+[menu]
+  [[menu.main]]
+    identifier = "Home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "About"
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    identifier = "Kontak"
+    name = "Kontak"
+    url = "/contact/"
+    weight = 3
+  [[menu.main]]
+    identifier = "Catatan"
+    name = "Catatan"
+    url = "/note/"
+    weight = 4
+  [[menu.main]]
+    identifier = "Bookmark"
+    name = "Bookmark"
+    url = "/bookmark"
+    weight = 5
+  [[menu.main]]
+    identifier = "Kumpulan Ide"
+    name = "Kumpulan Ide"
+    url = "/ideku/"
+    weight = 6
