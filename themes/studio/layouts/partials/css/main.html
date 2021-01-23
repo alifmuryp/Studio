@@ -332,14 +332,37 @@ a.ohmyheader svg {
   transform: translate(0,6px);
 }
 /* ======== Share ========= */
-.sosmedplus svg{position:fixed;bottom:20px;left:20px;background:{{ .Site.Params.background }};fill:#fff;border-radius:50%;padding:10px;z-index: 9999999;width: 50px}
+.sosmedplus svg{
+bottom: 20px;
+left: 20px;
+}
+.pencarian svg {
+bottom: 70px;
+right: 15px;
+}
+.sosmedplus svg,.pencarian svg {
+position: fixed;background:{{ .Site.Params.background }};fill:#fff;border-radius:50%;padding:10px;z-index: 9999999;width: 50px}
 .sosmedplus svg:hover{background:{{ .Site.Params.background }};padding:12px}
-.dropdownsosmedplus{display:none}
-.sosmedplus input[type=checkbox]{display:none}
-.sosmedplus input[type=checkbox]:checked ~ div.dropdownsosmedplus{width:100%!important;display:block;position:fixed;bottom:70px;left:0;z-index: 9999999;}
+.pencarianBuka,.dropdownsosmedplus{display:none}
+ 
+.pencarian input[type=checkbox]:checked ~ div.pencarianBuka,.sosmedplus input[type=checkbox]:checked ~ div.dropdownsosmedplus{width:100%!important;display:block;position:fixed;bottom:70px;left:0;z-index: 9999999;}
     .sosmednav span:hover{
     background-color: {{ .Site.Params.background }} !important;border-radius:5px
     }
+.pencarianBuka {
+      text-align: right;
+      background:rgb(255,255,256,.8);
+      margin: auto;
+      height: 100vh;
+      bottom: 0!important;
+    }
+.widget-search {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* ======== Readmore && Related ========= */
 .content {
   display: flex;
@@ -426,7 +449,7 @@ input.widget-search__field,#ContactForm1 input,#ContactForm1 textarea {
   padding: 10px;
   resize: none;
   margin: 0 0 10px 10px;
-  border: 1px solid {{ .Site.Params.color }};
+  border: 1px solid {{ .Site.Params.darkcolor }};
   background-color: transparent;
 }
   #ContactForm1 input,#ContactForm1 textarea {width: 85%;}
@@ -434,7 +457,7 @@ input.widget-search__field,#ContactForm1 input,#ContactForm1 textarea {
   height: 150px;
 }
 input.widget-search__submit,#ContactForm1 button {
-  background-color: {{ .Site.Params.color }}  !important;
+  background-color: {{ .Site.Params.darkcolor }}  !important;
   padding: 10px!important;
   color: #fff;
   font-weight: bold;
