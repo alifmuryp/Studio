@@ -134,3 +134,25 @@ expiryDate = ["expiryDate"]
     name = "drible"
     url = "https://www.dribbble.com/murypstudio"
     weight = 8
+    # contact me
+  [[menu.contact]]
+    identifier = "telegram"
+    name = "telegram"
+    url = "https://t.me/muryp"
+    weight = 1
+  [[menu.contact]]
+    identifier = "gmail"
+    name = "gmail"
+    url = "mailto:alifmuryp@gmail.com"
+    weight = 2
+   # Ask me
+  [[menu.ask]]
+    identifier = "twitter"
+    name = "twitter"
+    url = "https://twitter.com/murypstudio"
+    weight = 1
+  [[menu.ask]]
+    identifier = "facebook"
+    name = "facebook"
+    url = "https://facebook.com/murypstudio"
+    weight = 2
