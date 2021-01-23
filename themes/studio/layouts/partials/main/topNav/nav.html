@@ -7,19 +7,19 @@
   </label>
   <div class="navku mynav mynav2">
     <div class="cardInfo">
-      <a href="/img/authors/muryp.png"> <img src="/img/authors/muryp.min.png" alt="Avatar"></a>
+      <a href="{{.Site.Params.Img}}"> <img src="{{.Site.Params.Thumb}}" alt="{{.Site.Params.Description}}"></a>
       <div class="container">
-        <h4><b>Alif MuryP</b></h4>
+        <h4><b>{{.Site.Params.Author}}</b></h4>
         <p>
-          Be Simple, Unique, Usefully
+          {{.Site.Params.Kataku | safeHTML}}
         </p>
         {{ if not .IsHome }}
         <div class='sosmednav'>
-      {{ range .Site.Menus.sosmed.Sort.ByWeight }}
+          {{ range .Site.Menus.sosmed.Sort.ByWeight }}
           <a href='{{ .URL }}' rel='nofollow' target='_blank' title='{{ .Name }}'>
             <span class='{{ .Name }}' /></a>
-      {{ end }}
-    </div>
+          {{ end }}
+        </div>
         {{end}}
       </div>
     </div>
@@ -36,26 +36,26 @@
     <div class="mynav">
       <div class='sosmednav'>
         <h2>For bussines Contact :</h2>
-      {{ range .Site.Menus.contact.Sort.ByWeight }}
-          <a href='{{ .URL }}' rel='nofollow' target='_blank' title='{{ .Name }}'>
-            <span class='{{ .Name }}' /></a>
-      {{ end }}
+        {{ range .Site.Menus.contact.Sort.ByWeight }}
+        <a href='{{ .URL }}' rel='nofollow' target='_blank' title='{{ .Name }}'>
+          <span class='{{ .Name }}' /></a>
+        {{ end }}
         <h2>Ask me on:</h2>
-      {{ range .Site.Menus.ask.Sort.ByWeight }}
-          <a href='{{ .URL }}' rel='nofollow' target='_blank' title='{{ .Name }}'>
-            <span class='{{ .Name }}' /></a>
-      {{ end }}
+        {{ range .Site.Menus.ask.Sort.ByWeight }}
+        <a href='{{ .URL }}' rel='nofollow' target='_blank' title='{{ .Name }}'>
+          <span class='{{ .Name }}' /></a>
+        {{ end }}
       </div>
     </div>
     <input type="checkbox" id="nav3" />
     <label for="nav3">Laman
     </label>
     <div class="mynav dropdown">
-{{ with .Site.GetPage "/laman" }}
-	{{ range .Paginator.Pages}}
+      {{ with .Site.GetPage "/laman" }}
+      {{ range .Paginator.Pages}}
       <a href="{{.Permalink}}">{{.Name}}</a>
-            {{ end }}
-            {{ end }}
+      {{ end }}
+      {{ end }}
     </div>
     <input type="checkbox" id="nav4" />
     <label for="nav4">Kategori Blog

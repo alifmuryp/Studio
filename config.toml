@@ -41,6 +41,8 @@ canonifyURLs = true
     author = "MuryP"
     # Description/subtitle for homepage
     description = "MuryP, MuryP Beta, Internet, Technology, hardware, Operating Sistem, Software, Jaringan Komunikasi, JarKom, TIK, Ringkasan, Alief Prihantoro, Alif MuryP, Buku, Ebook,My Project Drawing/Desain,UI/UX,front end,Blogging, SEO,catatan"
+    img = "/img/authors/muryp.png"
+    thumb = "/img/authors/muryp.min.png"
     # Template
     color = "#1394e8b3"
     lightcolor = "#1394e833"
