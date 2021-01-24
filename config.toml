@@ -43,10 +43,10 @@ canonifyURLs = true
     description = "MuryP, MuryP Beta, Internet, Technology, hardware, Operating Sistem, Software, Jaringan Komunikasi, JarKom, TIK, Ringkasan, Alief Prihantoro, Alif MuryP, Buku, Ebook,My Project Drawing/Desain,UI/UX,front end,Blogging, SEO,catatan"
     img = "/img/authors/muryp.png"
     thumb = "/img/authors/muryp.min.png"
-    # Template
+    # Color
     color = "#1394e8b3"
     lightcolor = "#1394e833"
-    darkcolor = "#1394e8"
+    darkcolor = "#0088e0"
     background = "#1394e899"
     darkbackground = "#1294e8"
     # header = "link" (opsional)

@@ -24,8 +24,8 @@
     font-size: 1rem;
     font-weight: 100;
     line-height: 1.5;
-    color: {{ .Site.Params.color }};
-    background-color: rgb(51,51,51,.2)
+    color: #333;
+    background-color: rgb(51,51,51,.05)
   }
 blockquote cite {
   font-size: 70%;
@@ -76,14 +76,14 @@ a,a:hover {
 b,strong {
   font-weight:
   bold;
-  color: {{ .Site.Params.darkcolor }}
+  color: {{ .Site.Params.color }}
 }
 
 blockquote {
   background-color: {{ .Site.Params.lightcolor }};
   padding: 15px;
   margin: 5px;
-  border-left: 5px solid {{ .Site.Params.color }};
+  border-left: 5px solid {{ .Site.Params.darkcolor }};
   color: #fff;
   font-weight: 500;
   text-align: left
@@ -100,7 +100,7 @@ blockquote {
   top: 0;
   height: 18px;
   z-index: 5;
-  background-color: {{ .Site.Params.color }};
+  background-color: {{ .Site.Params.darkcolor }};
   height: 50px;
 }
 .header a {
@@ -351,7 +351,7 @@ position: fixed;background:{{ .Site.Params.background }};fill:#fff;border-radius
     }
 .pencarianBuka {
       text-align: right;
-      background:rgb(255,255,256,.8);
+      background:rgb(0,0,0,.8);
       margin: auto;
       height: 100vh;
       bottom: 0!important;
@@ -362,6 +362,7 @@ position: fixed;background:{{ .Site.Params.background }};fill:#fff;border-radius
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 80%;
 }
 /* ======== Readmore && Related ========= */
 .content {
@@ -472,7 +473,7 @@ input.widget-search__submit,#ContactForm1 button {
 /* ========== Footer ========== */
 
 #footer {
-  background: {{ .Site.Params.color }};
+  background: {{ .Site.Params.darkcolor }};
   padding: 50px 10px;
   color: #fff;
   text-align: center;
